@@ -893,7 +893,7 @@ function library:New()
                             end)
                         end)
                     elseif type == "Label" then
-                        Section.Size = Section.Size + UDim2.new(0,0,0,16)
+                        Section.Size = Section.Size + UDim2.new(0,0,0,12)
                         local Label = Instance.new("TextLabel")
                         Label.Name = "Label"
                         Label.Parent = Frame_2
@@ -1295,7 +1295,7 @@ function library:New()
                             callback()
                         end)
                     elseif type == "Dropdown" then
-                        Section.Size = Section.Size + UDim2.new(0,0,0,38)
+                        Section.Size = Section.Size + UDim2.new(0,0,0,37)
                         local Dropdown = Instance.new("Frame")
                         do
                             local Label = Instance.new("TextLabel")
