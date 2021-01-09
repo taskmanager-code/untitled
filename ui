@@ -910,7 +910,7 @@ function library:New()
                         function cheat:SetValue(value)
                         end
                     elseif type == "Slider" then
-                        Section.Size = Section.Size + UDim2.new(0,0,0,25)
+                        Section.Size = Section.Size + UDim2.new(0,0,0,28)
                         local min, max, default = data.min or 0, data.max or 100, data.default or 50
                         local Slider = Instance.new("Frame")
                         local Label = Instance.new("TextLabel")
@@ -923,7 +923,7 @@ function library:New()
                         Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Slider.BackgroundTransparency = 1.000
                         Slider.Position = UDim2.new(0, 0, 0, 0)
-                        Slider.Size = UDim2.new(1, 0, 0, 23)
+                        Slider.Size = UDim2.new(1, 0, 0, 26)
 
                         Label.Name = "Label"
                         Label.Parent = Slider
