@@ -970,7 +970,7 @@ function library:New()
                             cheat.value = value
                             local a
                             if min > 0 then
-                                a = ((cheat.value.Slider - min) * 10) / (max-min)
+                                a = ((cheat.value.Slider - min)) / (max-min)
                             else
                                 a = (cheat.value.Slider-min)/(max-min)
                             end
@@ -1341,7 +1341,7 @@ function library:New()
                         TextLabel.Parent = TextButton
                         TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel.BackgroundTransparency = 1.000
-                        TextLabel.Position = UDim2.new(0, 4, 0, -1)
+                        TextLabel.Position = UDim2.new(0, 4, 0, 0)
                         TextLabel.Size = UDim2.new(1, -4, 1, 0)
                         TextLabel.Font = Enum.Font.SourceSans
                         TextLabel.Text = "none ok"
