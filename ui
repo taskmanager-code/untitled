@@ -219,7 +219,7 @@ function library:New()
     Decoration.Parent = InnerTabExample
     Decoration.BackgroundColor3 = Color3.fromRGB(255, 0, 245)
     Decoration.BorderSizePixel = 0
-    Decoration.Position = UDim2.new(1, 0, 0, -1)
+    Decoration.Position = UDim2.new(0, 1, 1, -1)
     Decoration.Size = UDim2.new(1, 0, 0, 1)
 
     Divider.Name = "Divider"
