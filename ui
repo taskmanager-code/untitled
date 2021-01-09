@@ -708,7 +708,7 @@ function library:New()
                             ColorPicker.Frame.J.ImageColor3 = Color3.fromHSV(0,0,v)
 
                             ColorPicker.Frame.tspy.tspycolor.tspypos.Position = UDim2.new(1-cheat.value.Transparency,0,0,0)
-
+                            ColorPicker.Frame.tspy.tspycolor.ImageColor3 = Color3.fromHSV(hue, sat, v)
 
                             tbl.Color = Color3.fromHSV(hue, sat, v)
                             callback(tbl)
@@ -853,6 +853,7 @@ function library:New()
                             tspypos.Position = UDim2.new(0, x, 0, 0)
                             transp = 1-x/168
                             cheat.value.Transparency = transp
+                            print(transp)
                             callback(cheat.value)
                         end
                         tspy.MouseButton1Down:Connect(function()
