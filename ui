@@ -1044,7 +1044,7 @@ function library:New()
                         TextLabel.Parent = Cheat
                         TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         TextLabel.BackgroundTransparency = 1.000
-                        TextLabel.Position = UDim2.new(0.126635522, 0, 0, -1)
+                        TextLabel.Position = UDim2.new(0.126635522, 0, 0, 1)
                         TextLabel.Size = UDim2.new(0.873364508, 0, 1, -4)
                         TextLabel.Font = Enum.Font.SourceSans
                         TextLabel.Text = text
