@@ -78,7 +78,9 @@ function library:New()
         end
     end)
 
-
+    if syn then
+        syn.protect_gui(ScreenGui)
+    end
 
     local cursor = Instance.new("ImageLabel")
     cursor.Name = "cursor"
@@ -328,6 +330,7 @@ function library:New()
 
             count = count + 1
             local innertab = InnerTabExample:Clone()
+            Tab.Frame.ClipsDescendants = true
             innertab.Text = name
             innertab.Name = name
             innertab.Visible = true
