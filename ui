@@ -707,7 +707,7 @@ function library:New()
                             ColorPicker.Frame.ImageButton.Frame.Position = UDim2.new(0, 0, 0, v)
                             ColorPicker.Frame.J.ImageColor3 = Color3.fromHSV(0,0,v)
 
-                            ColorPicker.Frame.tspy.tspycolor.tspypos.Position = UDim2.new(1-cheat.value.Transparency/100,0,0,0)
+                            ColorPicker.Frame.tspy.tspycolor.tspypos.Position = UDim2.new(1-cheat.value.Transparency,0,0,0)
 
 
                             tbl.Color = Color3.fromHSV(hue, sat, v)
