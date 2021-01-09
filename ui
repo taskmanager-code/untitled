@@ -536,7 +536,7 @@ function library:New()
                         ColorPicker.Parent = Toggle
                         ColorPicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         ColorPicker.BorderColor3 = Color3.fromRGB(0, 0, 0)
-                        ColorPicker.Position = UDim2.new(0, 187, 0, 1)
+                        ColorPicker.Position = UDim2.new(0, 187, 0, 0)
                         ColorPicker.Size = UDim2.new(0, 19, 0, 9)
                         ColorPicker.AutoButtonColor = false
                         ColorPicker.Font = Enum.Font.SourceSans
@@ -723,7 +723,7 @@ function library:New()
                         ColorPicker.Parent = Toggle
                         ColorPicker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         ColorPicker.BorderColor3 = Color3.fromRGB(0, 0, 0)
-                        ColorPicker.Position = UDim2.new(0, 187, 0, 1)
+                        ColorPicker.Position = UDim2.new(0, 187, 0, 0)
                         ColorPicker.Size = UDim2.new(0, 19, 0, 9)
                         ColorPicker.AutoButtonColor = false
                         ColorPicker.Font = Enum.Font.SourceSans
