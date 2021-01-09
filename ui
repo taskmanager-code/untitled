@@ -88,7 +88,7 @@ function library:New()
     cursor.BackgroundTransparency = 1
     cursor.Size = UDim2.new(0,17,0,17)
     cursor.Image = "rbxassetid://518398610"
-    cursor.ZIndex = 100
+    cursor.ZIndex = 1000
     cursor.ImageColor3 = Color3.fromRGB(255,0,255)
 
     function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -929,7 +929,7 @@ function library:New()
                         Label.Parent = Slider
                         Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Label.BackgroundTransparency = 1.000
-                        Label.Position = UDim2.new(0, 28, 0, -4)
+                        Label.Position = UDim2.new(0, 28, 0, -2)
                         Label.Size = UDim2.new(0, 81, 0, 11)
                         Label.Font = Enum.Font.SourceSans
                         Label.Text = text
@@ -941,7 +941,7 @@ function library:New()
                         Value.Parent = Slider
                         Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Value.BackgroundTransparency = 1.000
-                        Value.Position = UDim2.new(0, 119, 0, -4)
+                        Value.Position = UDim2.new(0, 119, 0, -2)
                         Value.Size = UDim2.new(0, 66, 0, 11)
                         Value.Font = Enum.Font.SourceSans
                         Value.Text = default
@@ -952,7 +952,7 @@ function library:New()
                         TextButton.Parent = Slider
                         TextButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
                         TextButton.BorderColor3 = Color3.fromRGB(5, 5, 5)
-                        TextButton.Position = UDim2.new(0, 24, 0, 10)
+                        TextButton.Position = UDim2.new(0, 24, 0, 12)
                         TextButton.Size = UDim2.new(0, 162, 0, 8)
                         TextButton.AutoButtonColor = false
                         TextButton.Font = Enum.Font.SourceSans
