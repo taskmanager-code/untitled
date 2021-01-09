@@ -78,9 +78,7 @@ function library:New()
         end
     end)
 
-    if syn then
-        syn.protect_gui(ScreenGui)
-    end
+
 
     local cursor = Instance.new("ImageLabel")
     cursor.Name = "cursor"
