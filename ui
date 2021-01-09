@@ -708,7 +708,7 @@ function library:New()
                             ColorPicker.Frame.ImageButton.Frame.Position = UDim2.new(0, 0, 0, v)
                             ColorPicker.Frame.J.ImageColor3 = Color3.fromHSV(0,0,v)
 
-                            ColorPicker.Frame.tspy.tspycolor.tspypos.Position = UDim2.new(1-cheat.value.Transparency,0,0,0)
+                            ColorPicker.Frame.tspy.tspycolor.tspypos.Position = UDim2.new(0,cheat.value.Transparency*164,0,0)
                             ColorPicker.Frame.tspy.tspycolor.ImageColor3 = Color3.fromHSV(hue, sat, v)
 
                             tbl.Color = Color3.fromHSV(hue, sat, v)
@@ -764,9 +764,6 @@ function library:New()
                         Frame_3.Position = UDim2.new(0, 0, 0, 0)
                         Frame_3.Size = UDim2.new(0, 13, 0, 3)
                         Frame_3.ZIndex = 3
-                        if data.default ~= nil then
-                            cheat:SetValue({Toggle = data.default.Toggle, Color = data.default.Color})
-                        end
 
                         local tspy = Instance.new("ImageButton")
                         local tspycolor = Instance.new("ImageLabel")
@@ -798,6 +795,10 @@ function library:New()
                         tspypos.BorderColor3 = Color3.fromRGB(0, 0, 0)
                         tspypos.Size = UDim2.new(0, 4, 0, 12)
                         tspypos.ZIndex = 3
+
+                        if data.default ~= nil then
+                            cheat:SetValue({Toggle = data.default.Toggle, Color = data.default.Color})
+                        end
 
                         Toggle.MouseButton1Down:Connect(function()
                             cheat.value["Toggle"] = not cheat.value["Toggle"]
