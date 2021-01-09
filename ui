@@ -290,6 +290,7 @@ function library:New()
 
         local TabButton = TabButtonExample:Clone()
         local Tab = TabExample:Clone()
+        Tab.Frame.ClipsDescendants = true
 
         Tab.Name = name
         TabButton.Visible = true
@@ -330,7 +331,6 @@ function library:New()
 
             count = count + 1
             local innertab = InnerTabExample:Clone()
-            Tab.Frame.ClipsDescendants = true
             innertab.Text = name
             innertab.Name = name
             innertab.Visible = true
