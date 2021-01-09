@@ -923,14 +923,14 @@ function library:New()
                         Slider.Parent = Frame_2
                         Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Slider.BackgroundTransparency = 1.000
-                        Slider.Position = UDim2.new(0, 0, 0, -0)
+                        Slider.Position = UDim2.new(0, 0, 0, 0)
                         Slider.Size = UDim2.new(1, 0, 0, 23)
 
                         Label.Name = "Label"
                         Label.Parent = Slider
                         Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Label.BackgroundTransparency = 1.000
-                        Label.Position = UDim2.new(0, 28, 0, -3)
+                        Label.Position = UDim2.new(0, 28, 0, -4)
                         Label.Size = UDim2.new(0, 81, 0, 11)
                         Label.Font = Enum.Font.SourceSans
                         Label.Text = text
@@ -942,7 +942,7 @@ function library:New()
                         Value.Parent = Slider
                         Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                         Value.BackgroundTransparency = 1.000
-                        Value.Position = UDim2.new(0, 119, 0, -3)
+                        Value.Position = UDim2.new(0, 119, 0, -4)
                         Value.Size = UDim2.new(0, 66, 0, 11)
                         Value.Font = Enum.Font.SourceSans
                         Value.Text = default
@@ -953,7 +953,7 @@ function library:New()
                         TextButton.Parent = Slider
                         TextButton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
                         TextButton.BorderColor3 = Color3.fromRGB(5, 5, 5)
-                        TextButton.Position = UDim2.new(0, 24, 0, 11)
+                        TextButton.Position = UDim2.new(0, 24, 0, 10)
                         TextButton.Size = UDim2.new(0, 162, 0, 8)
                         TextButton.AutoButtonColor = false
                         TextButton.Font = Enum.Font.SourceSans
