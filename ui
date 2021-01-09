@@ -78,10 +78,6 @@ function library:New()
         end
     end)
 
-    if syn then
-        syn.protect_gui(ScreenGui)
-    end
-
     local cursor = Instance.new("ImageLabel")
     cursor.Name = "cursor"
     cursor.Parent = ScreenGui
@@ -1190,6 +1186,7 @@ function library:New()
                                 cheat.value.Active = true
                             end
                         end)
+                        
                         function cheat:SetValue(tbl)
                             cheat.value = tbl
                             if tbl.Toggle then
@@ -1216,6 +1213,9 @@ function library:New()
                                 toggle.Font = Enum.Font.SourceSansBold
                             end
                             Keybind.Text = "["..cheat.value.Key.."]"
+                        end
+                        if data.default ~= nil then
+                            cheat:SetValue(data.default)
                         end
                         game:GetService("UserInputService").InputBegan:Connect(function(input)
                             if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.MouseButton2 and not binding then
@@ -1248,9 +1248,6 @@ function library:New()
                             cheat.value["Toggle"] = not cheat.value["Toggle"]
                             cheat:SetValue(cheat.value)
                         end)
-                        if data.default ~= nil then
-                            cheat:SetValue(data.default)
-                        end
                     elseif type == "Button" then
                         Section.Size = Section.Size + UDim2.new(0,0,0,22)
                         local Button = Instance.new("Frame")
